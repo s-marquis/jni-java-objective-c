@@ -10,11 +10,11 @@ javac WarnAppChartDisplay.java
 #        algo_tool.c
 
 
-gcc -o algo_tool \
+gcc -framework Foundation -o algo_tool \
 	-I/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/include/ \
 	-I/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/include/darwin/ \
 	-L/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/server/ \
-	-ljvm algo_tool.c
+	-ljvm algo_tool.m
 
 
 
